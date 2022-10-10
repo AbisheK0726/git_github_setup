@@ -1,5 +1,7 @@
 # Connect to GitHub with SSH (Windows)
 
+![Diagram of GitHub and SSH](images/ssh-github.jpg)
+
 ## Generate a new SSH key
 
 1. Open Bash Terminal.
