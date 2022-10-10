@@ -56,5 +56,3 @@ your_uk_resident = input("Are you a UK resident? (True/False): ")
 print(your_first_name, your_last_name, your_DOB, your_course, your_uk_resident)
 # expected output: Abishek Aneese 26/07/2001 DevOps True
 ```
-
-test
