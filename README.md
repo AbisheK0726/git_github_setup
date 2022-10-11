@@ -331,3 +331,82 @@ name = "Abihsek"
 age = 21
 print(f"My name is {name}, and I am {age}") # expected output: My name is Abihsek, and I am 21
 ```
+
+## Data Collections
+
+### Lists
+
+Lists are used to store multiple items in a single variable. The syntax is:
+
+```python
+list = ["item1", "item2", "item3"]
+```
+
+```python
+list = ["DevOps", "Cloud", "Data Science"]
+print(list) # expected output: ['DevOps', 'Cloud', 'Data Science']
+```
+
+#### List Methods
+
+| Method | Description |
+| --- | --- |
+| append() | Adds an element at the end of the list |
+| count() | Returns the number of elements with the specified value |
+| insert() | Adds an element at the specified position |
+| pop() | Removes the element at the specified position |
+| remove() | Removes the item with the specified value |
+| sort() | Sorts the list |
+
+```python
+list = ["DevOps", "Cloud", "Data Science"]
+list.append("Machine Learning")
+print(list) # expected output: ['DevOps', 'Cloud', 'Data Science', 'Machine Learning']
+
+list = ["DevOps", "Cloud", "Data Science"]
+print(list.count("DevOps")) # expected output: 1
+
+list = ["DevOps", "Cloud", "Data Science"]
+list.insert(1, "Machine Learning")
+print(list) # expected output: ['DevOps', 'Machine Learning', 'Cloud', 'Data Science']
+
+list = ["DevOps", "Cloud", "Data Science"]
+list.pop(1)
+print(list) # expected output: ['DevOps', 'Data Science']
+
+list = ["DevOps", "Cloud", "Data Science"]
+list.remove("Cloud")
+print(list) # expected output: ['DevOps', 'Data Science']
+
+list = ["DevOps", "Cloud", "Data Science"]
+list.sort()
+print(list) # expected output: ['Cloud', 'Data Science', 'DevOps']
+```
+
+### Tuples
+
+Tuples are used to store multiple items in a single variable, but they are immutable. The syntax is:
+
+```python
+tuple = ("item1", "item2", "item3")
+```
+
+```python
+tuple = ("DevOps", "Cloud", "Data Science")
+print(tuple) # expected output: ('DevOps', 'Cloud', 'Data Science')
+```
+
+#### Tuple Methods
+
+| Method | Description |
+| --- | --- |
+| count() | Returns the number of times a specified value occurs in a tuple |
+| index() | Searches the tuple for a specified value and returns the position of where it was found |
+
+```python
+tuple = ("DevOps", "Cloud", "Data Science")
+print(tuple.count("DevOps")) # expected output: 1
+
+tuple = ("DevOps", "Cloud", "Data Science")
+print(tuple.index("DevOps")) # expected output: 0
+```
