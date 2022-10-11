@@ -50,7 +50,17 @@ print(Example_text.upper())
 print(Example_text.lower()) 
 
 # Capitalize the first letter of the string
-print(sentence.capitalize())
+print(Example_text.capitalize())
 
 # Replace all instances of one word in a string with another
-print(sentence.replace("sentence", "Example_text")) ## outputs "This is a Example_text, with some words that make up the Example_text."
+print(Example_text.replace("sentence", "Example_text")) ## outputs "This is a Example_text, with some words that make up the Example_text."
+
+
+# Concatenatition and Casting
+
+string1 = "Abishek"
+string2 = "Aneese"
+salary = 1000000
+
+print (string1 + " " + string2 + " makes " + str(salary)) ## outputs "Abishek Aneese makes 1000000"
+

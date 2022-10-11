@@ -284,3 +284,50 @@ print(string.replace("l", "L")) # expected output: HeLLo WorLd
 print(string.split(" ")) # expected output: ['Hello', 'World']
 print(string.strip("l")) # expected output: Hello Wor
 ```
+
+### Concatenating Strings
+
+String concatenation is used to join two or more strings. The syntax is:
+
+```python
+string1 + string2
+```
+
+```python
+string1 = "Hello"
+string2 = "World"
+print(string1 + " " + string2) # expected output: Hello World
+```
+
+### Casting and F-Strings
+
+Casting is used to convert a variable from one type to another. The syntax is:
+
+```python
+type(variable)
+```
+
+- `type` is the type you want to convert to. It can be either `int()`, `float()`, `str()`.
+- `variable` is the variable you want to convert.
+
+```python
+x = 4
+y = 4.0
+z = "4"
+
+print(int(y)) # expected output: 4
+print(float(x)) # expected output: 4.0
+print(str(x)) # expected output: 4
+```
+
+F-Strings are used to format strings. The syntax is:
+
+```python
+f"{variable}"
+```
+
+```python
+name = "Abihsek"
+age = 21
+print(f"My name is {name}, and I am {age}") # expected output: My name is Abihsek, and I am 21
+```
