@@ -154,4 +154,133 @@ Operators are used to perform operations on variables and values.
 | in | Returns True if a sequence with the specified value is present in the object | x in y |
 | not in | Returns True if a sequence with the specified value is not present in the object | x not in y |
 
-## String Slicing and String Formatting
+#### Examples
+
+```python
+# Arithmetic Operators
+x = 35
+y = 5
+
+print(x + y) # expected output: 40
+print(x - y) # expected output: 30
+print(x * y) # expected output: 175
+print(x / y) # expected output: 7.0
+print(x % y) # expected output: 0
+
+x = 5
+y = 2
+
+print(x ** y) # expected output: 25
+print(x // y) # expected output: 2
+
+========================================
+# Assignment Operators
+
+x = 5
+x += 3
+print(x) # expected output: 8
+
+x = 5
+x *= 3
+print(x) # expected output: 15
+
+x = 5
+x >>= 1
+print(x) # expected output: 2
+
+========================================
+# Comparison Operators
+
+x = 5
+y = 3
+
+print(x == y) # expected output: False
+print(x != y) # expected output: True
+print(x > y) # expected output: True
+print(x < y) # expected output: False
+print(x >= y) # expected output: True
+print(x <= y) # expected output: False
+
+========================================
+# Logical Operators
+
+x = 5
+
+print(x > 3 and x < 10) # expected output: True
+print(x > 3 or x < 4) # expected output: True
+print(not(x > 3 and x < 10)) # expected output: False
+
+========================================
+# Identity and Membership Operators
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is z) # expected output: True
+print(x is y) # expected output: False
+print(x == y) # expected output: True
+
+print("banana" in x) # expected output: True
+print("pineapple" not in x) # expected output: True
+```
+
+## String Methods
+
+### String Slicing
+
+String slicing is used to get a part of a string. The syntax is:
+
+```python
+string[start:end:step]
+```
+
+- `start` is the index of the first character you want to get.
+- `end` is the index of the first character you don't want to get.
+- `step` is the number of characters you want to skip.
+
+```python
+string = "Hello World"
+print(string[0:5]) # expected output: Hello
+print(string[6:11]) # expected output: World
+print(string[0:11:2]) # expected output: HloWrd
+```
+
+### String Casings
+
+String casings are used to change the casing of a string. The syntax is:
+
+```python
+string.casing()
+```
+
+- `casing` is the casing you want to change to. It can be either `lower()`, `upper()`, `title()`, `capitalize()` or `swapcase()`.
+
+```python
+string = "Hello World"
+print(string.lower()) # expected output: hello world
+print(string.upper()) # expected output: HELLO WORLD
+print(string.title()) # expected output: Hello World
+print(string.capitalize()) # expected output: Hello world
+print(string.swapcase()) # expected output: hELLO wORLD
+```
+
+### Modifying Strings with Methods
+
+String methods are used to perform operations on strings. The syntax is:
+
+```python
+string.method()
+```
+
+- `method` is the method you want to use. It can be either `count()`, `find()`, `index()`, `replace()`, `split()`, `strip()`.
+
+```python
+string = "Hello World"
+print(string.count("l")) # expected output: 3
+print(string.find("l")) # expected output: 3
+print(string.index("l")) # expected output: 2
+print(string.replace("l", "L")) # expected output: HeLLo WorLd
+print(string.split(" ")) # expected output: ['Hello', 'World']
+print(string.strip("l")) # expected output: Hello Wor
+```

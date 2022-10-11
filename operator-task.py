@@ -1,8 +1,4 @@
 ## Make example of python operator
-
-from doctest import Example
-
-
 x = 35
 y = 5
 
