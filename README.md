@@ -20,6 +20,7 @@ Tip: You can use `git help <command>` to get more information about a command.
 ## Github
 
 Github is a website that hosts git repositories. It allows you to share your code with other people, and collaborate on projects.
+Github also has a lot of useful features, like issue tracking, pull requests, and code reviews.
 
 ### Github Commands
 
@@ -85,3 +86,71 @@ your_uk_resident = input("Are you a UK resident? (True/False): ")
 print(your_first_name, your_last_name, your_DOB, your_course, your_uk_resident)
 # expected output: Abishek Aneese 26/07/2001 DevOps True
 ```
+
+## Task 1.4 - Operators
+
+Operators are used to perform operations on variables and values.
+
+### Arithmetic Operators
+
+| Operator | Name | Example |
+| --- | --- | --- |
+| + | Addition | x + y |
+| - | Subtraction | x - y |
+| * | Multiplication | x * y |
+| / | Division | x / y |
+| % | Modulus | x % y |
+| ** | Exponentiation | x ** y |
+| // | Floor division | x // y |
+
+### Assignment Operators
+
+| Operator | Name | Example | Same As |
+| --- | --- | --- | --- |
+| = | Assignment | x = 5 | x = 5 |
+| += | Addition assignment | x += 3 | x = x + 3 |
+| -= | Subtraction assignment | x -= 3 | x = x - 3 |
+| *= | Multiplication assignment | x *= 3 | x = x * 3 |
+| /= | Division assignment | x /= 3 | x = x / 3 |
+| %= | Modulus assignment | x %= 3 | x = x % 3 |
+| //= | Floor division assignment | x //= 3 | x = x // 3 |
+| **= | Exponentiation assignment | x **= 3 | x = x ** 3 |
+| &= | AND assignment | x &= 3 | x = x & 3 |
+| ^= | XOR assignment | x ^= 3 | x = x ^ 3 |
+| >>= | Right shift assignment | x >>= 3 | x = x >> 3 |
+| <<= | Left shift assignment | x <<= 3 | x = x << 3 |
+
+*Note:*
+
+- There is also the or operator `|` which is used to perform a OR operation. eg: `x | y` will return `True` if either `x` or `y` is `True`.
+
+- The right shift operator `>>` is used to shift the bits of a number to the right. 
+- eg: `x >> 1` will shift the bits of `x` to the right by 1. When `x` is `5 (00000101)`, the result will be `2 (00000010)`.
+
+### Comparison Operators
+
+| Operator | Name | Example |
+| --- | --- | --- |
+| == | Equal | x == y |
+| != | Not equal | x != y |
+| > | Greater than | x > y |
+| < | Less than | x < y |
+| >= | Greater than or equal to | x >= y |
+| <= | Less than or equal to | x <= y |
+
+### Logical Operators
+
+| Operator | Description | Example |
+| --- | --- | --- |
+| and | Returns True if both statements are true | x < 5 and  x < 10 |
+| or | Returns True if one of the statements is true | x < 5 or x < 4 |
+| not | Reverse the result, returns False if the result is true | not(x < 5 and x < 10) |
+
+### Identity and Membership Operators
+
+| Operator | Description | Example |
+| --- | --- | --- |
+| is | Returns True if both variables are the same object | x is y |
+| is not | Returns True if both variables are not the same object | x is not y |
+| in | Returns True if a sequence with the specified value is present in the object | x in y |
+| not in | Returns True if a sequence with the specified value is not present in the object | x not in y |
