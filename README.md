@@ -1,3 +1,32 @@
+# Git & Github
+
+## Git
+
+Git is a version control system. It allows you to keep track of changes to your code. It also allows you to work on code with other people.
+
+### Git Commands
+
+- `git init` - initialize a git repository
+- `git status` - check the status of your repository
+- `git add` - add files to the staging area
+- `git commit -m "message"` - commit changes to the repository, with a message
+- `git log` - view the commit history
+- `git push` - push changes to a remote repository
+- `git pull` - pull changes from a remote repository
+- `git clone` - clone a remote repository
+
+Tip: You can use `git help <command>` to get more information about a command.
+
+## Github
+
+Github is a website that hosts git repositories. It allows you to share your code with other people, and collaborate on projects.
+
+### Github Commands
+
+- `git remote add origin <url>` - add a remote repository
+- `git push -u origin master` - push changes to the remote repository
+- `git pull origin master` - pull changes from the remote repository
+
 # An introduction to Python
 
 ## Task 1 - Python Basics
