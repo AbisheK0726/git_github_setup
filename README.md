@@ -1,10 +1,11 @@
-# Git & Github
+# Week 2
+## Git & Github
 
-## Git
+### Git
 
 Git is a version control system. It allows you to keep track of changes to your code. It also allows you to work on code with other people.
 
-### Git Commands
+#### Git Commands
 
 - `git init` - initialize a git repository
 - `git status` - check the status of your repository
@@ -17,18 +18,16 @@ Git is a version control system. It allows you to keep track of changes to your 
 
 Tip: You can use `git help <command>` to get more information about a command.
 
-## Github
+### Github
 
 Github is a website that hosts git repositories. It allows you to share your code with other people, and collaborate on projects.
 Github also has a lot of useful features, like issue tracking, pull requests, and code reviews.
 
-### Github Commands
+#### Github Commands
 
 - `git remote add origin <url>` - add a remote repository
 - `git push -u origin master` - push changes to the remote repository
 - `git pull origin master` - pull changes from the remote repository
-
-# An introduction to Python
 
 ## Task 1 - Python Basics
 
@@ -72,7 +71,7 @@ print(type(is_student)) # expected output: <class 'bool'>
 print(type(subjects)) # expected output: <class 'list'>
 ```
 
-## Task 1.3 - Input
+### Task 1.3 - Input
 
 The `input()` function allows the user to enter data. The data entered is always a string.
 
@@ -87,11 +86,11 @@ print(your_first_name, your_last_name, your_DOB, your_course, your_uk_resident)
 # expected output: Abishek Aneese 26/07/2001 DevOps True
 ```
 
-## Task 1.4 - Operators
+### Task 1.4 - Operators
 
 Operators are used to perform operations on variables and values.
 
-### Arithmetic Operators
+#### Arithmetic Operators
 
 | Operator | Name | Example |
 | --- | --- | --- |
@@ -103,7 +102,7 @@ Operators are used to perform operations on variables and values.
 | ** | Exponentiation | x ** y |
 | // | Floor division | x // y |
 
-### Assignment Operators
+#### Assignment Operators
 
 | Operator | Name | Example | Same As |
 | --- | --- | --- | --- |
@@ -127,7 +126,7 @@ Operators are used to perform operations on variables and values.
 - The right shift operator `>>` is used to shift the bits of a number to the right. 
 - eg: `x >> 1` will shift the bits of `x` to the right by 1. When `x` is `5 (00000101)`, the result will be `2 (00000010)`.
 
-### Comparison Operators
+#### Comparison Operators
 
 | Operator | Name | Example |
 | --- | --- | --- |
@@ -138,7 +137,7 @@ Operators are used to perform operations on variables and values.
 | >= | Greater than or equal to | x >= y |
 | <= | Less than or equal to | x <= y |
 
-### Logical Operators
+#### Logical Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
@@ -146,7 +145,7 @@ Operators are used to perform operations on variables and values.
 | or | Returns True if one of the statements is true | x < 5 or x < 4 |
 | not | Reverse the result, returns False if the result is true | not(x < 5 and x < 10) |
 
-### Identity and Membership Operators
+#### Identity and Membership Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
@@ -154,3 +153,5 @@ Operators are used to perform operations on variables and values.
 | is not | Returns True if both variables are not the same object | x is not y |
 | in | Returns True if a sequence with the specified value is present in the object | x in y |
 | not in | Returns True if a sequence with the specified value is not present in the object | x not in y |
+
+## String Slicing and String Formatting
