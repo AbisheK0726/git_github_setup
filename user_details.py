@@ -1,6 +1,3 @@
-from email.headerregistry import Address
-
-
 # Get user input for there details
 Fname = input("Please enter your first name: ")
 Lname = input("Please enter your last name: ")
