@@ -1,4 +1,5 @@
 # Week 2
+
 ## Git & Github
 
 ### Git
@@ -410,3 +411,7 @@ print(tuple.count("DevOps")) # expected output: 1
 tuple = ("DevOps", "Cloud", "Data Science")
 print(tuple.index("DevOps")) # expected output: 0
 ```
+
+## Python Tasks
+
+![Python Tasks](images/pythonTasks.png)
