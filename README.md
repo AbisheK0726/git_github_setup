@@ -1,5 +1,9 @@
 # Week 2
 
+## Python Tasks
+
+![Python Tasks](images/pythonTasks.png)
+
 ## Git & Github
 
 ### Git
@@ -328,9 +332,9 @@ f"{variable}"
 ```
 
 ```python
-name = "Abihsek"
+name = "Abishek"
 age = 21
-print(f"My name is {name}, and I am {age}") # expected output: My name is Abihsek, and I am 21
+print(f"My name is {name}, and I am {age}") # expected output: My name is Abishek, and I am 21
 ```
 
 ## Data Collections
@@ -412,6 +416,100 @@ tuple = ("DevOps", "Cloud", "Data Science")
 print(tuple.index("DevOps")) # expected output: 0
 ```
 
-## Python Tasks
+### Dictionaries
 
-![Python Tasks](images/pythonTasks.png)
+Dictionaries are used to store data values in key:value pairs. The syntax is:
+
+```python
+dictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+}
+```
+
+```python
+dictionary = {
+    "name": "Abishek",
+    "age": 21,
+    "country": "India"
+}
+print(dictionary) # expected output: {'name': 'Abishek', 'age': 21, 'country': 'India'}
+```
+
+#### Dictionary Methods
+
+| Method | Description |
+| --- | --- |
+| fromkeys() | Returns a dictionary with the specified keys and values |
+| get() | Returns the value of the specified key |
+| items() | Returns a list containing a tuple for each key value pair |
+| keys() | Returns a list containing the dictionary's keys |
+| pop() | Removes the element with the specified key |
+| popitem() | Removes the last inserted key-value pair |
+| update() | Updates the dictionary with the specified key-value pairs |
+| values() | Returns a list of all the values in the dictionary |
+
+```python
+dictionary = {
+    "name": "Abishek",
+    "age": 21,
+    "country": "England"
+}
+print(dictionary.fromkeys("name", "Abishek")) # expected output: {'n': 'Abishek', 'a': 'Abishek', 'm': 'Abishek', 'e': 'Abishek'}
+print(dictionary.get("name")) # expected output: Abishek
+print(dictionary.items()) # expected output: dict_items([('name', 'Abishek'), ('age', 21), ('country', 'England')])
+print(dictionary.keys()) # expected output: dict_keys(['name', 'age', 'country'])
+print(dictionary.values()) # expected output: dict_values(['Abishek', 21, 'England'])
+
+dictionary = {
+    "name": "Abishek",
+    "age": 21,
+    "country": "England"
+}
+dictionary.pop("age")
+print(dictionary) # expected output: {'name': 'Abishek', 'country': 'England'}
+
+dictionary = {
+    "name": "Abishek",
+    "age": 21,
+    "country": "England"
+}
+dictionary.popitem()
+print(dictionary) # expected output: {'name': 'Abishek', 'age': 21}
+
+
+dictionary = {
+    "name": "Abishek",
+    "age": 21,
+    "country": "England"
+}
+dictionary.update({"name": "Aneese"})
+print(dictionary) # expected output: {'name': 'Aneese', 'age': 21, 'country': 'England'}
+```
+
+#### Task
+
+```python
+
+story1 = { "start": "Once upon a time", "middle": "Angel baked Luke bread ", "end": "the end" }
+print("=====================================\n")
+
+print(story1)
+print(type(story1))
+
+print("=====================================\n")
+
+print(story1.keys())
+print(story1.values())
+
+print("=====================================\n")
+
+print(story1["start"])
+print(story1["middle"])
+print(story1["end"])
+
+print("=====================================\n")
+story1["hero"] = "Shahrukh"
+print(story1)
+```
